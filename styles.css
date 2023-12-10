@@ -370,3 +370,163 @@ main {
     line-height: 1.8rem;
     color: #808080;
 }
+
+/* 
+//////////////////////////////////////////////////////////////////////////////////
+//// Imagen
+////////////////////////////////////////////////////////////////////////////////// */
+
+
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./Assets/img/bitcoinbaby2x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+/* 
+//////////////////////////////////////////////////////////////////////////////////
+//// Seccion Planes
+////////////////////////////////////////////////////////////////////////////////// */
+
+.plan-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.plans__title h2{
+    color: var(--warm-black);
+}
+
+.plan-card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 65%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 240px;
+    margin: 30px auto 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+
+.plan-card__recomended {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    top:-15px;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 6px;
+    font-weight: 700;
+}
+
+.plan-card__title {
+    padding-top:  30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height:  1.8rem;
+    color: black;
+}
+
+.plan-card__price {
+    display: inline-block;
+    height: 56px;
+    font-size: 5.2rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.plan-card__price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 25px;
+}
+
+.plan-card__saving {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.plan-card__call-to-action {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #eee;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    vertical-align: text-bottom;
+}
+
+.plan-card__call-to-action span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("./Assets/icons/orange-right-arrow.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+.plan-card__recomended--monthly{
+    background-color: var(--secondary-blue);
+}
+
+.plan-card__recomended--lifetime{
+    background-color: var(--grey);
+    color: var(--warm-black);
+}
+
+.plan-card--lifetime {
+    background-color: var(--warm-black);
+}
+
+.plan-card--lifetime .plan-card__title, 
+.plan-card--lifetime .plan-card__price, 
+.plan-card--lifetime .plan-card__call-to-action{
+    color: var(--just-white);
+}
+
+.plan-card--lifetime .plan-card__call-to-action {
+    background-color: var(--black);
+}
+
+/* 
+//////////////////////////////////////////////////////////////////////////////////
+//// Slider
+////////////////////////////////////////////////////////////////////////////////// */
+
+.plans-slider {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 30px;
+    padding:0 50px;
+}
