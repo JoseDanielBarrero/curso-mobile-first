@@ -182,7 +182,7 @@ main {
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
-    text-align: left;
+    text-align: center;
 }
 
 .currency-table__container{
@@ -420,7 +420,7 @@ main {
     min-width: 190px;
     max-width: 300px;
     height: 240px;
-    margin: 30px auto 0;
+    margin: 30px 0 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -529,6 +529,7 @@ main {
     scroll-snap-type: x proximity;
     gap: 30px;
     padding:0 50px;
+justify-content: center;
 }
 
 
